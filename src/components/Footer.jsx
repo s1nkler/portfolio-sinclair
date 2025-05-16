@@ -11,10 +11,10 @@ const Footer = () => {
         delay: 0.8,
         ease: [0, 1, 0.2, 1.01]
       }} 
-      className="fixed bottom-4 left-0 max-w-[1400px] mx-auto h-16 flex justify-center items-center text-center right-0 px-8 md:px-0"
+      className="fixed bottom-2 left-0 w-full flex justify-center items-center text-center px-2 sm:px-4 md:px-0 z-50"
       style={{ backdropFilter: "blur(30px)" }}
     >
-      <p className="text-gray-300 text-lg font-semibold glass p-4 rounded-lg">
+      <p className="text-gray-300 text-sm sm:text-base md:text-lg font-semibold glass p-2 sm:p-4 rounded-lg w-full max-w-[600px] mx-auto">
         Created by{" "}
         <a
           href="https://www.linkedin.com/in/sinclair-collins"

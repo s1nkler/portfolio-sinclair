@@ -9,7 +9,7 @@ import { BiLogoFlutter, BiLogoTailwindCss } from "react-icons/bi";
 const Hero = () => {
   return (
     <div className="flex justify-center items-center min-h-[90vh]">
-      <div className="flex-col justify-center max-w-[1400px] mx-auto grid md:grid-cols-8 gap-8 p-8 mb-8 md:px-8 h-full" id="home">
+      <div className="flex-col justify-center max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-8 gap-8 p-8 mb-8 md:px-8 h-full" id="home">
         <motion.div 
           initial={{ opacity: 0, scale: 0.7 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -20,14 +20,14 @@ const Hero = () => {
           }}
           exit={{ opacity: 0, x: -100, transition: { delay: 0.3, duration: 0.5, ease: "easeOut" }}}
           exitTransition={{ duration: 0.1, ease: "easeOut" }}
-          className="flex items-center md:col-span-5 p-4 sm:p-6 sm:my-4 glass"
+          className="flex flex-col md:flex-row items-center md:col-span-5 p-4 sm:p-6 sm:my-4 glass"
         >
           <img
-            className="w-full max-w-[350px] h-auto object-contain"
+            className="w-full max-w-[350px] h-auto object-contain mb-4 md:mb-0"
             src={profilepic}
             alt="Profile Pic"
           />
-          <div className="ml-8 flex flex-col text-gray-200">
+          <div className="md:ml-8 flex flex-col text-gray-200 items-center md:items-start text-center md:text-left">
             <p className="text-3xl sm:text-5xl font-bold py-2">
               Hi Everyone!
               <br /> I am Sinclair Collins
@@ -36,25 +36,28 @@ const Hero = () => {
                 <TypeAnimation sequence={[" Web Developer", 1000, " Software Developer", 1000, " Graphic Designer", 1000]} wrapper="span" speed={50} repeat={Infinity} />  
               </div>
             </p>
-            <p className="hidden text-2xl md:text-3xl text-gray-400 font-semibold mt-4 sm:">
+            <p className="hidden text-2xl md:text-3xl text-gray-400 font-semibold mt-4">
               with 0 year of experience :D.
             </p>
-            <div className="flex mt-6">
+            <div className="flex flex-col sm:flex-row gap-4 mt-6 w-full md:w-auto">
               <a
                 href="/Sinclair's CV 2025.pdf"
                 download="Sinclair's CV 2025.pdf"
-                className="px-8 py-4 text-lg font-bold text-gray-200 bg-primary-color rounded-lg"
+                className="px-8 py-4 text-lg font-bold text-gray-200 bg-primary-color rounded-lg text-center"
               >
                 Download CV
               </a>
-              <button className="ml-4 px-8 py-4 text-lg font-bold text-gray-200 bg-zinc-800 rounded-lg hover:bg-slate-600 transition duration-300">
-                <a href="/about">About Me →</a>
-              </button>
+              <a
+                href="/about"
+                className="px-8 py-4 text-lg font-bold text-gray-200 bg-zinc-800 rounded-lg hover:bg-slate-600 transition duration-300 text-center"
+              >
+                About Me →
+              </a>
             </div>
           </div>
         </motion.div>
 
-        <div className="grid md:col-span-3 gap-8" id="skills">
+        <div className="grid md:col-span-3 gap-8 mt-8 md:mt-0" id="skills">
           <motion.div 
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}

@@ -1,7 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { DiHtml5, DiCss3, DiJavascript, DiBootstrap, DiPhp, DiReact, DiMongodb, DiJava, DiLaravel, DiMysql, DiDart, DiGit, DiPython, DiVisualstudio } from "react-icons/di";
-import { BiLogoTailwindCss, BiLogoFlutter, BiLogoGithub, BiLogoFigma } from "react-icons/bi";
+import {
+  DiHtml5, DiCss3, DiJavascript, DiBootstrap, DiPhp, DiReact, DiMongodb,
+  DiJava, DiLaravel, DiMysql, DiDart, DiGit, DiPython, DiVisualstudio
+} from "react-icons/di";
+import {
+  BiLogoTailwindCss, BiLogoFlutter, BiLogoGithub, BiLogoFigma
+} from "react-icons/bi";
 
 const containerVariants = {
   hidden: { opacity: 0, scale: 0.8 },
@@ -53,7 +58,7 @@ const Skills = () => {
         <p className="text-gray-200 text-4xl font-bold mb-12">Things that I've worked with</p>
 
         <motion.div
-          className="hidden sm:grid sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 text-center justify-center gap-10"
+          className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 text-center justify-center gap-5 sm:gap-10"
           variants={containerVariants}
           initial="hidden"
           animate={showItems ? "show" : "hidden"}
