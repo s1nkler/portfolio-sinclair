@@ -21,10 +21,10 @@ const projects = [
   },
   {
     img: ["/images/react1.png", "/images/react2.png", "/images/react3.png", "/images/react4.png", "/images/react5.png", "/images/react6.png"],
-    title: "Simple React Game",
-    description: "A simple Tic Tac Toe game built with React. Players take turns marking 'X' or 'O' on an interactive board. React's core concepts manage the game state and determine the winner. This project demonstrates basic React web development.",
+    title: "Nusa Game Center",
+    description: "A cultural quiz game built with React, designed to educate players about Indonesian heritage. Players answer questions about traditional weapons, music, and cuisine from various Indonesian provinces, using an interactive autocomplete input. The game features a responsive design, random question selection without repetition, and a scoring system with toast notifications. This project showcases React state management, component-based architecture, and responsive UI development with CSS animations.",
     links: {
-      github: "https://github.com/s1nkler/PW10_E_11666",
+      github: "https://nusa-game.vercel.app/",
     },
   },
   {
@@ -32,7 +32,7 @@ const projects = [
     title: "ReUse Mart",
     description: "This project delivers a website (React) and a mobile app (Dart/Flutter) for a second-hand e-commerce marketplace. Both platforms offer easy browsing, secure transactions, and user-friendly interfaces for buying and selling used goods.",
     links: {
-      github: "#",
+      github: "https://github.com/s1nkler/p3l_frontend",
     },
   },
   {
